@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'cur';
+    src: url(/font/DancingScript-Regular.ttf);
+}
+
+.header{
+    background-color: whitesmoke;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    
+    .wrapper{       
+        width: 90%;
+        // background-color: yellow;
+        margin-inline: auto;
+        padding-block: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .left{
+            // background-color: gray;
+            flex: 1;
+            .logo{
+                color: black;
+                text-decoration: none;
+                font-size: 30px;
+                font-weight: bold;
+            }
+        }
+
+        .menu{
+            font-family: cur;
+            color: black;
+            text-decoration: none;
+            font-size: 30px;
+            font-weight: bolder;
+            &:hover{
+                color: blue;
+            }
+        }
+        
+        .right{
+            // background-color: lightcoral;
+            flex: 1;
+            display: flex;
+
+            
+
+            .left{
+                // background-color: red;
+                flex: 2;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+
+            .right{
+                flex: 1;
+                display: flex;
+                justify-content: flex-end;
+                gap: 20px;
+
+                .userDrop{
+                    // background-color: yellow;
+                    display: flex;
+                    // flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    cursor: pointer;
+
+                    .dropdown{
+                        background-color: rgba(0, 0, 0, 0.76);
+                        position: absolute;
+                        top: 145%;
+                        padding: 10px 50px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+                    
+                        a{
+                            text-decoration: none;
+                            color: white;
+
+                            &:hover{
+                                color: gray;
+                            }
+                        }
+                    }
+                }
+
+
+                button{
+                    background-color: #2879fe;
+                    color: white;
+                }
+            }
+
+        }
+
+    }
+}
+
+
+
+@media screen and (max-width:756px) {
+    
+
+    .header{
+
+        .wrapper{
+            width: 95%;
+            flex-direction: column;
+
+           .left{
+                width: 100%;
+                text-align: center;
+           }
+
+           .right{
+            width: 100%;
+            // background-color: red;
+            justify-content: space-between;
+
+
+                .left{
+                    flex: 2;
+                    justify-content: flex-start;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    span{
+                        font-size: 12px;
+                    }
+                }
+
+                .right{
+                    flex: 1;
+                    gap: 10px;
+                }
+           }
+        }
+    }
+
+
+}

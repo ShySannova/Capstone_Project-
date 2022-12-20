@@ -1,0 +1,133 @@
+.restaurants{
+    background-color: black;
+    padding-block: 50px;
+
+    &_container{
+        width: 90%;
+        margin-inline: auto;
+        /* background-color: gray; */
+        padding: 10px;
+        color: white;
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        a{
+            text-decoration: none;
+            width: 30%;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            cursor: pointer;
+            transition: .2s ease-in-out;
+            -webkit-transition: .2s ease-in-out;
+            -moz-transition: .2s ease-in-out;
+            -ms-transition: .2s ease-in-out;
+            -o-transition: .2s ease-in-out;
+            color: white;
+
+            &:hover{
+                background-color: white;
+                color: black;
+                box-shadow: 0 0 4px gray;
+            }
+        }
+        .card {
+
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+            
+            .img{
+                width: 100%;
+                aspect-ratio: 4/3;
+                display: flex;
+                border-radius: 10px;
+                overflow: hidden;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+            }
+
+            .content{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                
+                .head{
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 10px;
+                    padding-bottom: 5px;
+                    span{
+                        background-color: white;
+                        padding: .1em .5em;
+                        border-radius: 50vw;
+                        font-weight: bold;
+                        color: black;
+                        display: flex;
+                        gap: 4px;
+                        align-items: center;
+                    }
+                }
+
+                .bottom{
+                    border-top: 1px solid white;
+                    padding-block: 10px;
+                    font-weight: 600;
+                    font-size: 14px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    padding-inline: 10px;
+                }
+
+               
+            }
+        }
+
+        .card:hover .head h3{
+            color: black;
+        }
+        .card:hover .head span{
+            background-color: black;
+            color: white;
+        }
+        .card:hover .content .bottom{
+            border-top: 1px solid black;
+        }
+    }
+
+    h3{
+        color: white;
+        text-align: center;
+    }
+
+}
+
+
+
+@media screen and (max-width:756px) {
+    
+    .restaurants{
+
+        &_container{
+            flex-direction: column;
+
+            a{
+                width: 100%;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,36 @@
+.main_cart{
+    // background-color: black;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    padding-block: 10px;
+
+    .cart{
+        width: 90%;
+
+        .item_container{
+            // background-color: yellow;
+            height: 90vh;
+
+            .item{
+                background-color: rgb(236, 231, 231);
+                padding: 10px;
+
+                .details{
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+
+                    .price{
+                        display: flex;
+                    }
+                }
+            }
+            
+        }
+        .total{
+            // background-color: red;
+            padding-inline-end: 10px;
+        }
+    }
+}

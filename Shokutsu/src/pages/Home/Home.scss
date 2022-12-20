@@ -1,0 +1,108 @@
+.home{
+    background-color: black;
+    min-height: 30vh;
+
+    .loginArea{
+        width: 40%;
+        height: 100vh;
+        background-color: rgba(10, 10, 10, 0.466);
+        backdrop-filter: blur(10px);
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        display: flex;
+        transition: .4s ease-in-out;
+        -webkit-transition: .4s ease-in-out;
+        -moz-transition: .4s ease-in-out;
+        -ms-transition: .4s ease-in-out;
+        -o-transition: .4s ease-in-out;
+
+        .x-btn{
+            position: absolute;
+            top: 0;
+            left: -10px;
+            width: 20px;
+            aspect-ratio: 1/1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: red;
+            color: white;
+            text-transform: uppercase;
+
+            &:hover{
+                color: black;
+            }
+            &:active{
+                background-color: black;
+                color: white;
+            }
+        }
+    
+
+        &.active{
+            right: 0;
+        }
+
+        .loginWrapper{
+            width: 100%;
+            // background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;    
+
+            .tab{
+                width: 50%;
+                display: flex;
+                justify-content: space-between;
+               
+                a{
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+
+            .container{
+                height: auto;
+
+                .wrapper{
+                    width: 50%;
+                }
+            }
+
+
+        }
+
+
+    }
+}
+
+
+@media screen and (max-width:756px) {
+    
+    .home{
+
+        .loginArea{
+            width: 80%;
+            
+            .loginWrapper{
+    
+                .tab{
+                    // background-color: red;
+                    width: 80%;
+                }
+    
+                .container{
+                    .wrapper{
+                        width: 80%;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+}

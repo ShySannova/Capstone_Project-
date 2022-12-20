@@ -1,0 +1,38 @@
+// @font-face {
+//     font-family: newfont;
+//     src: url(/font/DancingScript-Regular.ttf);
+// }
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // font-family: newfont;
+}
+
+button{
+    border: none;
+    background-color: orange;
+    cursor: pointer;
+    padding: .5em 1em;
+    font-weight: bold;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    transition: .2s ease-in-out;
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -ms-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+
+    &:hover{
+       background-color: gray;
+    }
+
+}
+
+
+

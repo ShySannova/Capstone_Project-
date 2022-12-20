@@ -1,0 +1,135 @@
+.banner-container{
+    background-color: black;
+    // position: sticky;
+    // top: 0;
+    // z-index: 1;
+
+    .product-banner{
+        color: white;
+        height:25vh;
+        width: 90%;
+        margin-inline: auto;
+        display: flex;
+        justify-content: space-between;
+        padding-block: 20px;
+        
+        .banner-img,
+        .offers{
+            width: 25%;
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        .banner-img img{
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .banner-info{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+
+            .content-wrapper{
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            }
+            
+            .res-extra{
+                display: flex;
+                flex-direction: column;
+                font-size: 12px;
+                padding-bottom: 10px;
+            }
+            
+            .actions{
+                display: flex;
+                justify-content: space-between;
+                gap: 20px;
+                color: black;
+
+                input{
+                    padding-block: 10px;
+                    outline: none;
+                    border: none;
+                }
+
+                div{
+                    background-color: white;
+                    display: flex;
+                    font-size: 12px;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 10px;
+                }
+            }
+
+          
+            
+        }
+
+        .offers{
+            padding: 10px;
+
+            .offers-content{
+                border: 2px solid white;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                padding-left: 10px;
+                gap: 10px;
+                position: relative;
+
+                &::before{
+                    content: 'OFFER';
+                    position: absolute;
+                    padding: 4px;
+                    top: 0;
+                    left: 0;
+                    translate: -15% -50%;
+                    color: white;
+                    background-color: black;
+                }
+
+                div{
+                    display: flex;
+                    gap: 10px;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            
+        }
+    }
+
+}
+
+@media screen and (max-width:756px) {
+    
+    .banner-container{
+
+        // position: static;
+        
+        .product-banner{
+    
+            .banner-img{
+                width: 30%;
+            }
+            .banner-info{
+                width: 70%;
+                .content-wrapper{
+                    .actions{
+                        display: none;
+                    }
+                }
+            }
+            .offers{
+                display: none;
+            }
+        }
+    }
+}

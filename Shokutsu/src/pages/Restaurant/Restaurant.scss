@@ -1,0 +1,70 @@
+.restaurant{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color:white;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),
+    url('/img/login.jpg')
+        center;
+    background-size: cover;
+    align-items: center;
+    gap: 20px;
+    
+    &Wrapper{
+        width: 80%;
+        // background-color: red;
+        display: flex;
+        justify-content: space-between;
+        padding-block: 10px;
+
+        .left{
+            flex: 1;
+
+            .logo{
+                color: white;
+                text-decoration: none;
+                font-size: 30px;
+                font-weight: bold;
+            }
+        }
+
+        .loggedin{
+            display: flex;
+            gap: 10px;
+        }
+
+        .right{
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 10px;
+
+            a{
+                color: white;
+            }
+        }
+
+
+    }
+
+
+
+}
+
+@media screen and (max-width:756px) {
+    
+    .restaurant{
+        &Wrapper{
+            width: 90%;
+
+            .loggedin{
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    }
+}

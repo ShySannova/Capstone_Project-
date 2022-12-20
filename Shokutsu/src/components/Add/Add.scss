@@ -1,0 +1,64 @@
+*{
+    outline: none;
+}
+
+.product-add-container{
+    padding-block: 10px;
+    padding-inline: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: wheat;
+
+    label{
+        font-size: small;
+    }
+
+    .dish-name>input,
+    .desc>textarea{
+        width: 100%;
+        padding: 5px 10px;
+    }
+
+    .desc>textarea{
+        resize: none;
+    }
+    .price-quantity{
+        display: flex;
+        // background-color: red;
+        gap: 10px;
+    
+        .prices{
+            flex: 1;
+            // background-color: blue;
+            display: flex;
+            flex-direction: column;
+            
+            input{
+                width: 100%;
+                padding: 10px;
+                // background-color: yellow;
+            }
+        }
+    
+        
+    }
+    .add-image{
+        display: flex;
+        flex-direction: column;
+
+        input{
+            padding: 10px;
+        }
+    }
+
+    .add-btn-container{
+        margin-top: 10px;
+        /* background-color: red; */
+    }
+}
+
+
+
+
+
